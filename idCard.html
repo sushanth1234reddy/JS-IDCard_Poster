@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID card Task</title>
+</head>
+<body>
+    <script>
+        let title1=document.createElement("h1");
+        //creating elemnts for the page
+        let cardDiv=document.createElement("div");
+        let idpic=document.createElement("img");
+        let companyName=document.createElement("h3");
+        let name=document.createElement("span");
+        let birdRole=document.createElement("span");
+        let birdID=document.createElement("span");
+        let DOB=document.createElement("span");
+        let backGimg=document.createElement("img");
+
+
+        //cardDiv i.e main div styles
+        cardDiv.style.height="400px";
+        cardDiv.style.width="250px";
+        cardDiv.style.border="3px solid black";
+        cardDiv.style.borderRadius="20px";
+        cardDiv.style.display="flex";
+        cardDiv.style.flexDirection="column";
+        cardDiv.style.rowGap="20px";
+        cardDiv.style.textAlign="center";
+        cardDiv.style.alignItems="center";
+        cardDiv.style.justifyItems="center";
+        cardDiv.style.backgroundImage="url('idcardimg.jpeg')";
+        cardDiv.style.backgroundRepeat="no-repeat";
+        cardDiv.style.backgroundSize="cover";
+        cardDiv.style.boxShadow="0 0 70px green";
+        cardDiv.addEventListener("mouseover",()=>{
+            cardDiv.style.transform="scale(1.1)";
+            cardDiv.style.transitionDuration="3s";
+            cardDiv.style.transitionTimingFunction="ease";
+        });
+        cardDiv.addEventListener("mouseleave",()=>{
+            cardDiv.style.transform="scale(1)";
+        });
+        cardDiv.style.margin="20px 0px 0px 50px";
+        
+        
+        
+
+        companyName.innerHTML="Company: Angry Birds";
+        companyName.style.color="white"
+        name.innerHTML="<b>Employee Name : Bron Breaker</b>";
+        birdRole.innerHTML="<b>Role: Team Leader</b>";
+        birdID.innerHTML="<b> ID: super666red</b>";
+        DOB.innerHTML="<b>DOB: 19/08/2009</b>"
+
+        idpic.setAttribute("src","stdpic.jpeg");
+        idpic.style.height="100px";
+        idpic.style.width="120px";
+        idpic.style.borderRadius="40%";
+        idpic.style.border="";
+
+        title1.innerHTML="ID card Task";
+        title1.style.marginLeft="70px";
+        
+
+        //appending the elements in the page
+        
+        cardDiv.appendChild(companyName);
+        cardDiv.appendChild(idpic);
+        cardDiv.appendChild(name);
+        cardDiv.appendChild(birdRole);
+        cardDiv.appendChild(birdID);
+        cardDiv.appendChild(DOB);
+        document.body.appendChild(title1);
+        document.body.appendChild(cardDiv);
+    </script>
+</body>
+</html>
