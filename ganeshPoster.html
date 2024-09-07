@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Poster</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <script>
+      let mainDiv=document.createElement("div");
+      let Text1=document.createElement("h2");
+      Text1.innerHTML="Ganesh Chaturthi Poster";
+      Text1.style.fontFamily="Verdana"
+      Text1.style.margin="20px 0px 0px 70px";
+      let innDiv=document.createElement("div");
+      let gimg=document.createElement("img");
+      let wish=document.createElement("h2");
+      let marq=document.createElement("marquee");
+      let mouse=document.createElement("img");
+      
+
+      mainDiv.style.border="2px solid orange";
+      mainDiv.style.height="450px";
+      mainDiv.style.width="350px";
+      mainDiv.style.margin="20px 0px 0px 50px";
+      mainDiv.style.borderRadius="15px";
+      mainDiv.style.backgroundImage="url('gback.png')"
+
+      innDiv.style.border="8px dotted orange";
+      innDiv.style.height="425px";
+      innDiv.style.width="325px";
+      innDiv.style.borderRadius="10px";
+      innDiv.style.margin="5px 0px 0px 5px";
+
+      gimg.setAttribute("src","ganeshpic.jpeg");
+      gimg.style.height="250px";
+      gimg.style.width="320px";
+      gimg.style.margin="50px 0px 0px 10px";
+      
+      gimg.style.transform="scale(1.1)";
+      gimg.style.transitionDuration="3s";
+      gimg.style.transitionTimingFunction="ease"
+      
+      wish.innerHTML="Happy Ganesh Chaturti";
+      wish.style.fontFamily="Lucida Sans";
+      wish.style.margin="0px 0px 0px 20px";
+
+      
+
+      
+
+      mouse.setAttribute("src","mouse.jpg");
+      mouse.style.height="100px";
+      mouse.style.width="90px";
+      
+
+      marq.append(mouse);
+      mainDiv.appendChild(innDiv);
+      innDiv.appendChild(wish);
+      innDiv.appendChild(gimg);
+      innDiv.appendChild(marq);
+      document.body.appendChild(Text1);
+      
+      document.body.appendChild(mainDiv);
+
+    </script>
+</body>
+</html>
